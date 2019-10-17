@@ -3,20 +3,20 @@ Ce projet vise à concevoir une sorte de lecteur vidéo en ligne dans le but d'a
 
 ## Rapport de mise en place de la Base de donnée
 
-###   Nom de la Bd : NanVideoCourses
+##   Nom de la Bd : NanVideoCourses
   Nous avons en tout conçu 9 tables tels que conçu:
   
-  Create table Mois (
+##  Mois (
     - id INTEGER PRIMARY KEY AUTO_INCREMENT,
     - mois VARCHAR
   );
   
-  CREATE TABLE categorieModule (
+## categorieModule (
     - id INTEGER PRIMARY KEY AUTO_INCREMENT,
     - nom VARCHAR
   );
   
-  CREATE TABLE user (
+## user (
     - id INTEGER PRIMARY KEY AUTO_INCREMENT,
     - nom VARCHAR,
     - prenom VARCHAR,
@@ -24,14 +24,14 @@ Ce projet vise à concevoir une sorte de lecteur vidéo en ligne dans le but d'a
     - password VARCHAR
   );
   
-  CREATE TABLE cours (
+## cours (
     - id INTEGER PRIMARY KEY AUTO_INCREMENT,
     - titre TEXT,
     - description TEXT,
     - #module_id INTERGER
   );
   
-  CREATE TABLE module (
+## module (
     - id INTEGER PRIMARY KEY AUTO_INCREMENT,
     - nom VARCHAR,
     - description TEXT,
@@ -41,24 +41,24 @@ Ce projet vise à concevoir une sorte de lecteur vidéo en ligne dans le but d'a
     - #id_mois INTEGER
   );
   
-  CREATE TABLE user_module (
+## user_module (
     - #module_id INTEGER,
     - #user_id INTEGER
   );
     
-  CREATE TABLE user_quiz (
+## user_quiz (
     - #quiz_id INTEGER,
     - #user_id INTEGER
   );
   
-  CREATE TABLE chapitre (
+## chapitre (
     - id INTEGER PRIMARY KEY AUTO_INCREMENT,
     - titre TEXT,
     - description TEXT,
     - #cours_id INTEGER
   );
   
-   CREATE TABLE quiz (
+## quiz (
     - id INTEGER PRIMARY KEY AUTO_INCREMENT,
     - titre TEXT,
     - #chapitre_id
